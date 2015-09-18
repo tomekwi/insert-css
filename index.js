@@ -1,9 +1,6 @@
 var inserted = {};
 
 module.exports = function (css, options) {
-    if (inserted[css]) return;
-    inserted[css] = true;
-
     var doc =
         (options && options.document) ||
         (typeof document !== 'undefined' && document)
